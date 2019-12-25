@@ -1,0 +1,10 @@
+#mobile::before{
+    content: "+91";
+}
+table, tr, td, th {
+    border: 1px solid black
+}
+​
+td, th{
+    padding: 5px;
+}

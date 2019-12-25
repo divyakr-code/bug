@@ -11,11 +11,11 @@ document.getElementById("form1").addEventListener("submit", (e) => {
     }
     contacts.push(contact)
     let displayText = "";
-    contacts.forEach(contact => {
-        displayText = displayText + `<div style= "border: 1px solid black; margin: 10px; padding:10px;>
-                                        <h1>${contact.name}</h1>
-                                        <h1>${contact.email}</h1>
-                                        <h1>${contact.mobile}</h1>
+    contacts.forEach(currentObject => {
+        displayText = displayText + `<div style= "border: 1px solid black; margin: 10px; padding:10px;">
+                                        <h1>${currentObject.name}</h1>
+                                        <h1>${currentObject.email}</h1>
+                                        <h1>${currentObject.mobile}</h1>
                                     </div>`
         document.getElementById("displayContacts").innerHTML = displayText;    
     })
